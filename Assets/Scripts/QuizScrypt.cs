@@ -71,7 +71,7 @@ public class QuizScrypt : MonoBehaviour
         DisplayAnswer(index);
         SetButtonState(false);
         timer.CancelTimer();
-        scoreText.text = "score: " + scoreKeeper.CalculateScore();
+        scoreText.text = "score:" + scoreKeeper.ShowScore();
 
 
     }

@@ -28,8 +28,14 @@ public class ScoreKeeper : MonoBehaviour
         questionsSeen++;
     }
    
-   public int CalculateScore()
-   {
-       return Mathf.RoundToInt((correctAnswers / (float)questionsSeen) * 100);
-   }
+   //public void CalculateScore()
+   //{
+        
+   //    //return Mathf.RoundToInt((correctAnswers / (float)questionsSeen) * 100);
+   //}
+    public string ShowScore()
+    {
+        return " " + correctAnswers + "/"  + questionsSeen;
+    }
+
 }
